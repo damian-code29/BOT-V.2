@@ -1,0 +1,27 @@
+    'mt_base': 'Bienvenido al lanzador de tu BOT .\n
+    *este le permitira: editar de manera rapida el contenido de su proyecto y manipular el estado del BOT.\n\n
+    
+    -el boton "inventario" le permite vizualizar su inventario \n
+    (mediante doble click podra modificar los valores de cualquier casillas.)\n
+    (si desea recargar la pagina solo vuelva a presionarlo.)\n\n
+    
+    -el boton "usuarios" le permite vizualizar su lista de usuarios \n
+    (mediante doble click podra modificar los valores de cualquier casillas.)\n
+    (si desea recargar la pagina solo vuelva a presionarlo.)\n\n
+
+    -el boton "pedidos" le permite vizualizar su lista de pedidos \n
+    (mediante doble click podra modificar los valores de cualquier casillas.)\n
+    (si desea recargar la pagina solo vuelva a presionarlo.)\n\n
+    
+    -el boton "iniciar" permitira poner en linea el bot!\n
+    *tener claro que no debe existir ninguna instancia activa del mismo BOT*\n
+    *al inicial el BOT un boton verde en la parte inferior le confirmara que este esta en funcionamiento.\n\n
+    
+    -el boton "finalizar" pemitira apagar el bot!\n
+    *tener en cuenta que cerrara la misma sesion que abrio el boton iniciar!\n
+    *es de importancia vital para el buen funcionamiento y constancia del bot \n
+    el apagarlo antes de realizar cualquier cambio en los archivos origen.
+    *al finalizar el BOT un boton rojo en la parte inferior le confirmara que este esta fuera de funcionamiento.\n\n
+
+    *en pro de evitar posibles errores el BOT es dependiente de su lanzador, por lo tanto si cierra el lanzador:el BOT se detendra.
+    '
