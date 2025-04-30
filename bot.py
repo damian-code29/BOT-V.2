@@ -14,6 +14,10 @@ TOKEN = env.TOKEN
 user_registration_state = {}
 user_data = {}
 IMAGENES_PATH = env.IMG  # Ruta a la carpeta de imágenes
+textos ={
+    'saludo' : '👋 ¡Hola! Bienvenido a "El rey del pedal".\nEste BOT te permite generar pedidos de manera rapida\nINICIA TU PEDIDO\n\n'
+
+}
 
 # --- Variables Globales ---
 resultados_busqueda = {}  # Para almacenar los DataFrames de resultados
@@ -44,8 +48,7 @@ def comando_start(message):
     
     # Texto que acompañará a la imagen
     texto_saludo = (
-        "👋 ¡Hola! Bienvenido a nuestro bot.\n"
-        "Aquí puedes explorar nuestro catálogo, realizar pedidos y mucho más.\n"
+        textos['saludo']
     )
     
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)  # Usar ReplyKeyboardMarkup para botones en el chat
@@ -58,9 +61,9 @@ def comando_start(message):
     if not fn.usuario_registrado(chat_id):
         btn_registrar = types.KeyboardButton('📝 Registrarse')
         markup.add(btn_registrar)
-        texto_saludo += "\n¡Parece que aún no estás registrado! Usa el botón 'Registrarse' para crear tu cuenta y acceder a todas las funciones."
+        texto_saludo += "\n¡Parece que aún no estás registrado! Usa el botón 'Registrarse' para crear tu cuenta y acceder a todas las funciones.\n "
     else:
-        texto_saludo += "\n¡Ya estás registrado! Usa los botones de abajo para navegar."
+        texto_saludo += "\n¡Ya estás registrado! Usa los botones de abajo para navegar.\n "
     
     try:
         # Enviar la imagen
